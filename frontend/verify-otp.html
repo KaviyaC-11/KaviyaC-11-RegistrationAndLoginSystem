@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page title -->
+  <title>Verify OTP | SecureAuth</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       PAGE WRAPPER
+       ========================================================= -->
+  <div class="page">
+    <div class="card">
+
+      <!-- Logo / Brand -->
+      <div class="logo">SecureAuth</div>
+
+      <!-- Page heading -->
+      <h2 class="title">Verify your email</h2>
+      <p class="subtitle">
+        Enter the 6-digit code sent to your email
+      </p>
+
+      <!-- =====================================================
+           OTP VERIFICATION FORM
+           ===================================================== -->
+      <form id="otpForm">
+
+        <!-- OTP input boxes -->
+        <div class="otp-box">
+          <input class="otp-input" maxlength="1">
+          <input class="otp-input" maxlength="1">
+          <input class="otp-input" maxlength="1">
+          <input class="otp-input" maxlength="1">
+          <input class="otp-input" maxlength="1">
+          <input class="otp-input" maxlength="1">
+        </div>
+
+        <!-- Verify OTP button -->
+        <button type="submit" id="verifyBtn" disabled>
+          <span class="btn-text">Verify OTP</span>
+          <span class="btn-loader"></span>
+        </button>
+
+        <!-- Resend OTP button -->
+        <button type="button" id="resendOtpBtn">
+          <span class="btn-text">Resend OTP</span>
+          <span class="btn-loader"></span>
+        </button>
+
+      </form>
+
+      <!-- Message shown by auth.js -->
+      <p id="message"></p>
+
+      <!-- Footer -->
+      <div class="footer">© 2025 SecureAuth</div>
+
+    </div>
+  </div>
+
+  <!-- Auth logic -->
+  <script src="js/auth.js"></script>
+
+  <!-- OTP UX setup (already defined in auth.js) -->
+  <script>
+    setupOtpInputs();
+  </script>
+
+</body>
+</html>

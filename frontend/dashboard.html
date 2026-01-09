@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | SecureAuth</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+  <header class="site-header">
+    <div class="brand">SecureAuth</div>
+
+    <nav class="header-actions">
+      <!-- Delete account button (opens modal) -->
+      <button id="deleteAccountBtn" class="danger-btn header-btn">
+        Delete Account
+      </button>
+
+      <!-- Logout (handled by frontend logic / redirect) -->
+      <a href="index.html" class="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       MAIN DASHBOARD CONTENT
+       ========================================================= -->
+  <main class="dashboard">
+    <div class="dashboard-message">
+      <h1>Welcome 🎉</h1>
+
+      <p>
+        You have successfully logged in.<br>
+        Your account is verified and ready to use.
+      </p>
+
+      <!-- Message area used by auth.js (delete account feedback) -->
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    © 2025 SecureAuth. All rights reserved.
+  </footer>
+
+  <!-- =========================================================
+       DELETE ACCOUNT CONFIRMATION MODAL
+       ========================================================= -->
+  <div id="deleteModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3>Delete Account</h3>
+
+      <p>
+        Are you sure you want to permanently delete your account?
+        This action cannot be undone.
+      </p>
+
+      <div class="modal-actions">
+        <button id="cancelDeleteBtn" class="modal-cancel">
+          Cancel
+        </button>
+
+        <button id="confirmDeleteBtn" class="modal-delete">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth & dashboard logic -->
+  <script src="js/auth.js"></script>
+
+</body>
+</html>

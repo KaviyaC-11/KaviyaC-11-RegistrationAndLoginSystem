@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page title -->
+  <title>Register | SecureAuth</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       PAGE WRAPPER
+       ========================================================= -->
+  <div class="page">
+    <div class="card">
+
+      <!-- Logo / Brand -->
+      <div class="logo">SecureAuth</div>
+
+      <!-- Page heading -->
+      <h2 class="title">Create your account</h2>
+      <p class="subtitle">Enter your details to get started</p>
+
+      <!-- =====================================================
+           REGISTRATION FORM
+           ===================================================== -->
+      <form id="registerForm">
+
+        <!-- Email input -->
+        <input
+          id="regEmail"
+          type="email"
+          placeholder="Email address"
+        >
+
+        <!-- Password input -->
+        <div class="password-wrapper">
+        <input id="regPassword" type="password" placeholder="Password">
+        <span class="toggle-password" data-target="regPassword">Show</span>
+        </div>
+
+        <!-- Password rules (UI hint only) -->
+        <div class="password-rules">
+          Password must be at least 6 characters long and include
+          one uppercase letter, one lowercase letter, one number,
+          and one special character (! @ # $ % ^ & * _ - ( )).
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" id="registerBtn">
+          <span class="btn-text">Create account</span>
+          <span class="btn-loader"></span>
+        </button>
+      </form>
+
+      <!-- Message shown by auth.js -->
+      <p id="message"></p>
+
+      <!-- Login link -->
+      <div class="link">
+        Already have an account?
+        <a href="login.html">Sign in</a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">© 2025 SecureAuth</div>
+
+    </div>
+  </div>
+
+  <!-- Auth logic -->
+  <script src="js/auth.js"></script>
+</body>
+</html>

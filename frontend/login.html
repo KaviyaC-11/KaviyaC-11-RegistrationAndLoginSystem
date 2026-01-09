@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page title -->
+  <title>Login | SecureAuth</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       PAGE WRAPPER
+       ========================================================= -->
+  <div class="page">
+    <div class="card">
+
+      <!-- Logo / Brand -->
+      <div class="logo">SecureAuth</div>
+
+      <!-- Page heading -->
+      <h2 class="title">Welcome back</h2>
+      <p class="subtitle">Sign in to continue</p>
+
+      <!-- =====================================================
+           LOGIN FORM
+           ===================================================== -->
+      <form id="loginForm">
+
+        <!-- Email input -->
+        <input
+          id="loginEmail"
+          type="email"
+          placeholder="Email address"
+        >
+
+        <!-- Password input -->
+        <div class="password-wrapper">
+        <input id="loginPassword" type="password" placeholder="Password">
+        <span class="toggle-password" data-target="loginPassword">Show</span>
+        </div>
+
+
+        <!-- Submit button -->
+        <button type="submit" id="loginBtn">
+          <span class="btn-text">Sign in</span>
+          <span class="btn-loader"></span>
+        </button>
+      </form>
+
+      <!-- Message shown by auth.js -->
+      <p id="message"></p>
+
+      <!-- Forgot password link -->
+      <div class="link">
+        <a href="forgot-password.html">Forgot password?</a>
+      </div>
+
+      <!-- Register link -->
+      <div class="link">
+        Don’t have an account?
+        <a href="register.html">Create one</a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">© 2025 SecureAuth</div>
+
+    </div>
+  </div>
+
+  <!-- Auth logic -->
+  <script src="js/auth.js"></script>
+</body>
+</html>
