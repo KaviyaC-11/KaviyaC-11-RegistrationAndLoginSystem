@@ -142,9 +142,9 @@ PostgreSQL Database
    git clone https://github.com/your-username/your-repo-name.git
 ```
 
-2. Configure `application.properties`
+2. Configure application.properties
 
-   ```
+   ```properties
    spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
    spring.datasource.username=your_username
    spring.datasource.password=your_password
@@ -156,7 +156,7 @@ PostgreSQL Database
 3. Run the application
 
    ```bash
-   mvn spring-boot:run
+    mvn spring-boot:run
    ```
 
  ### Frontend Setup
@@ -166,11 +166,15 @@ PostgreSQL Database
 
 ------------------------------------------------------------------------------
 
+
+
 ### Author
 
 Kaviya C
 GitHub: [https://github.com/KaviyaC-11]
 LinkedIn: [https://www.linkedin.com/in/kaviya-c-386b2729b]
+
+
 
 ------------------------------------------------------------------------------
 
