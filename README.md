@@ -127,7 +127,7 @@ PostgreSQL Database
 
 ------------------------------------------------------------------------------
 
-## Setup Instructions
+### Setup Instructions
 
 ### Prerequisites
 - Java 11 or above
@@ -144,7 +144,7 @@ PostgreSQL Database
 
 2. Configure `application.properties`
 
-   ```properties
+   ```
    spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
    spring.datasource.username=your_username
    spring.datasource.password=your_password
@@ -159,14 +159,14 @@ PostgreSQL Database
    mvn spring-boot:run
    ```
 
-### Frontend Setup
+ ### Frontend Setup
 
 * Open `index.html` in live server in vscode or browser.
 * Ensure backend is running on `http://localhost:8080`
 
 ------------------------------------------------------------------------------
 
-## Author
+### Author
 
 Kaviya C
 GitHub: [https://github.com/KaviyaC-11]
