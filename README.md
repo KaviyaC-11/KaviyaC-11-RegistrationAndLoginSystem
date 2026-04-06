@@ -173,10 +173,9 @@ PostgreSQL Database
 
 
 ### Author
-
-Kaviya C
-* GitHub: [https://github.com/KaviyaC-11]
-* LinkedIn: [https://www.linkedin.com/in/kaviya-c-386b2729b]
+#### Kaviya C
+* GitHub: [ https://github.com/KaviyaC-11 ]
+* LinkedIn: [ https://www.linkedin.com/in/kaviya-c-386b2729b ]
 
 
 
