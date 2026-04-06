@@ -138,20 +138,24 @@ PostgreSQL Database
 ### Backend Setup
 
 1. Clone the repository
+   
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
-```
+   ```
+
 
 2. Configure application.properties
-
-   ```properties
+   
+```markdown
+   properties
+ 
    spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
    spring.datasource.username=your_username
    spring.datasource.password=your_password
 
    spring.mail.username=your_email
    spring.mail.password=your_email_app_password
-   ```
+```
 
 3. Run the application
 
@@ -171,8 +175,8 @@ PostgreSQL Database
 ### Author
 
 Kaviya C
-GitHub: [https://github.com/KaviyaC-11]
-LinkedIn: [https://www.linkedin.com/in/kaviya-c-386b2729b]
+* GitHub: [https://github.com/KaviyaC-11]
+* LinkedIn: [https://www.linkedin.com/in/kaviya-c-386b2729b]
 
 
 
